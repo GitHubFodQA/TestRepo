@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="build" name="10JavaDefects">
+    <target name="init">
+        <mkdir dir="bin"/>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target name="build" depends="init">
+        <javac destdir="bin" verbose="true">
+            <src path="src"/>
+        </javac>
+    </target>
+</project>
